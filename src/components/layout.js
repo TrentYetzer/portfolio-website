@@ -6,46 +6,57 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Home from "./Home/home"
+import About from "./About/about"
+import Projects from "./Projects/projects"
+import Modals from "./Modals/modals"
+import Contact from "./Contact/contact"
+
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <Modals />
+      <div id="parallax" className="parallax">
+        <div id="home" className="hero parallax__group">
+          <div className="parallax__layer parallax__layer--base">
+            <Home />
+          </div>
+        </div>
+        <div id="interactive" className="home-button">
+          <a href="#about">
+            <button className="cool-button">
+              <span></span>
+              <text>View my work</text>
+            </button>
+          </a>
+        </div>
+        <div id="about" className="parallax__group">
+          <div className="parallax__layer parallax__layer--fore shapes">
+            <img
+              src="https://s22.postimg.cc/y3ll0amgx/driehoeken-01.png"
+              alt="foreground-shapes"
+            />
+          </div>
+          <div className="parallax__layer parallax__layer--base">
+            <About />
+          </div>
+        </div>
+        <div id="projects" className="parallax__group">
+          <div className="parallax__layer parallax__layer--fore">
+            <Projects />
+          </div>
+        </div>
+        <div id="contact" className="parallax__group">
+          <div className="parallax__layer parallax__layer--base">
+            <Contact />
+          </div>
+        </div>
       </div>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

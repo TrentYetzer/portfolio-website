@@ -1,0 +1,95 @@
+.about-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  border-top: #393c46 25px double;
+  border-bottom: #393c46 25px double;
+  background: white;
+  text-align: center;
+  color: #393c46;
+}
+
+.about-content {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.bottom img {
+  height: 15rem;
+  width: 15rem;
+}
+
+.description {
+  width: 45%;
+}
+
+.bottom p {
+  font-size: 1.2rem;
+}
+
+.bottom p a {
+  color: #393c46;
+}
+
+.about-button {
+  margin-top: 1rem;
+  height: 3rem;
+  width: 14rem;
+  white-space: nowrap;
+  font-size: 1.5rem;
+}
+
+.strengths li {
+  margin: 2rem 2rem 4rem 2rem;
+  list-style: none;
+  text-align: center;
+  width: 16rem;
+  padding: 0;
+}
+
+.strengths li i {
+  background-color: #6320ee;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 100%;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0 auto 1rem auto;
+}
+
+.strengths li div {
+  margin: 0;
+  word-wrap: normal;
+}
+
+@media screen and (max-width: 1300px) {
+  .top {
+    flex-direction: column;
+  }
+  .bottom {
+    flex-direction: column;
+  }
+  .about-section {
+    height: 82rem;
+  }
+  .description {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-section {
+    height: 90rem;
+  }
+  .strengths li {
+    width: 10rem;
+    margin: 2rem 1rem 2rem 1rem;
+  }
+  .description {
+    width: 95%;
+  }
+}

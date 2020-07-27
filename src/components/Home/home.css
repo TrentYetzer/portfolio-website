@@ -1,0 +1,453 @@
+.home-section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.home-background {
+  position: relative;
+  background-image: linear-gradient(#58b09c, #8075ff);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(90%);
+}
+.home-content {
+  position: fixed;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.home-content strong {
+  color: #6320ee;
+}
+
+.subtitle {
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.phrase {
+  position: relative;
+}
+
+.flashCard {
+  position: relative;
+  margin-left: 20px;
+  width: 15rem;
+}
+
+.flashCard span {
+  position: absolute;
+  display: flex;
+  height: 6rem;
+  width: 15rem;
+  margin: 0;
+  word-wrap: normal;
+  background-color: white;
+  color: #393c46;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  transform-origin: top left;
+}
+
+.card9 {
+  animation: card9 120s infinite ease-in-out;
+}
+.card8 {
+  animation: card8 120s infinite ease-in-out;
+}
+.card7 {
+  animation: card7 120s infinite ease-in-out;
+}
+.card6 {
+  animation: card6 120s infinite ease-in-out;
+}
+.card5 {
+  animation: card5 120s infinite ease-in-out;
+}
+.card4 {
+  animation: card4 120s infinite ease-in-out;
+}
+.card3 {
+  animation: card3 120s infinite ease-in-out;
+}
+.card2 {
+  animation: card2 120s infinite ease-in-out;
+}
+.card1 {
+  animation: card1 120s infinite ease-in-out;
+}
+.card0 {
+  animation: card0 120s infinite ease-in-out;
+}
+
+@keyframes card9 {
+  0%,
+  90%,
+  94% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  95% {
+    transform: rotate(120deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  96% {
+    transform: rotate(60deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  97% {
+    transform: rotate(105deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  98%,
+  99% {
+    transform: rotate(70deg);
+    top: 75vh;
+    left: 0rem;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+}
+@keyframes card8 {
+  0%,
+  84% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  85% {
+    transform: rotate(120deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  86% {
+    transform: rotate(60deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  87% {
+    transform: rotate(105deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  88%,
+  99% {
+    transform: rotate(70deg);
+    top: 75vh;
+    left: 0rem;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+}
+@keyframes card7 {
+  0%,
+  74% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  75% {
+    transform: rotate(120deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  76% {
+    transform: rotate(60deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  77% {
+    transform: rotate(105deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  78%,
+  99% {
+    transform: rotate(70deg);
+    top: 75vh;
+    left: 0rem;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+}
+@keyframes card6 {
+  0%,
+  64% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  65% {
+    transform: rotate(120deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  66% {
+    transform: rotate(60deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  67% {
+    transform: rotate(105deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  68%,
+  99% {
+    transform: rotate(70deg);
+    top: 75vh;
+    left: 0rem;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+}
+
+@keyframes card5 {
+  0%,
+  54% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  55% {
+    transform: rotate(120deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  56% {
+    transform: rotate(60deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  57% {
+    transform: rotate(105deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  58%,
+  99% {
+    transform: rotate(70deg);
+    top: 75vh;
+    left: 0rem;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+}
+@keyframes card4 {
+  0%,
+  44% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  45% {
+    transform: rotate(120deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  46% {
+    transform: rotate(60deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  47% {
+    transform: rotate(105deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  48%,
+  99% {
+    transform: rotate(70deg);
+    top: 75vh;
+    left: 0rem;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+}
+@keyframes card3 {
+  0%,
+  34% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  35% {
+    transform: rotate(120deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  36% {
+    transform: rotate(60deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  37% {
+    transform: rotate(105deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  38%,
+  99% {
+    transform: rotate(70deg);
+    top: 75vh;
+    left: 0rem;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+}
+
+@keyframes card2 {
+  0%,
+  24% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  25% {
+    transform: rotate(120deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  26% {
+    transform: rotate(60deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  27% {
+    transform: rotate(105deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  28%,
+  99% {
+    transform: rotate(70deg);
+    top: 75vh;
+    left: 0rem;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+}
+
+@keyframes card1 {
+  0%,
+  14% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  15% {
+    transform: rotate(120deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  16% {
+    transform: rotate(60deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  17% {
+    transform: rotate(105deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  18%,
+  99% {
+    transform: rotate(70deg);
+    top: 75vh;
+    left: 0rem;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+}
+@keyframes card0 {
+  0%,
+  4% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  5% {
+    transform: rotate(120deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  6% {
+    transform: rotate(60deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  7% {
+    transform: rotate(105deg);
+    top: 0rem;
+    left: -2rem;
+  }
+  8%,
+  99% {
+    transform: rotate(70deg);
+    top: 75vh;
+    left: 0rem;
+  }
+  100% {
+    transform: rotate(0deg);
+    top: 0rem;
+    left: -2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .subtitle {
+    display: block;
+  }
+  .flashCard {
+    left: 55%;
+    transform: translateX(-50%);
+  }
+  .subtitle {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

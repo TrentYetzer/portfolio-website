@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 html {
-  font-family: sans-serif;
+  font-family: "Ubuntu", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -7,6 +8,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 article,
 aside,
@@ -111,7 +113,7 @@ optgroup,
 select,
 textarea {
   font: inherit;
-  margin: 0;
+  outline: none;
 }
 optgroup {
   font-weight: 700;
@@ -187,7 +189,7 @@ textarea {
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 * {
   box-sizing: inherit;
@@ -200,7 +202,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -234,7 +236,7 @@ h1 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 4rem;
   line-height: 1.1;
 }
 h2 {
@@ -251,7 +253,7 @@ h2 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 3.5rem;
   line-height: 1.1;
 }
 h3 {
@@ -268,7 +270,7 @@ h3 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
+  font-size: 3rem;
   line-height: 1.1;
 }
 h4 {
@@ -285,7 +287,7 @@ h4 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1rem;
+  font-size: 2rem;
   line-height: 1.1;
 }
 h5 {
@@ -302,7 +304,7 @@ h5 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 0.85028rem;
+  font-size: 1.5;
   line-height: 1.1;
 }
 h6 {
@@ -319,7 +321,7 @@ h6 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 0.78405rem;
+  font-size: 1.25rem;
   line-height: 1.1;
 }
 hgroup {
@@ -385,6 +387,7 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  line-height: 1.05;
 }
 figure {
   margin-left: 0;
@@ -620,3 +623,317 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.home-button {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-button button {
+  color: white;
+  border: 2px solid white;
+  height: 3rem;
+  width: 14rem;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.shapes {
+  height: 0;
+}
+
+.shapes img {
+  position: absolute;
+  width: 100%;
+  top: -75vh;
+  filter: opacity(0.3);
+}
+
+.hero {
+  height: 100vh !important;
+}
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+  scroll-behavior: smooth !important;
+  background-color: white;
+}
+
+.parallax__group {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(0.7);
+  transform: translateZ(90px) scale(0.7);
+  z-index: 1;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 0;
+}
+
+.cool-button {
+  position: relative;
+  border: 2px #393c46 solid;
+  background: transparent;
+  color: #393c46;
+  overflow: hidden !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cool-button text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.cool-button span {
+  position: absolute;
+  background: #6320ee;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+
+.cool-button:hover {
+  color: white;
+  border: 2px solid #6320ee;
+}
+
+.cool-button:hover span {
+  top: 0;
+  left: 0;
+}
+
+#home {
+  z-index: 1;
+}
+
+#about {
+  z-index: 2;
+}
+
+#projects {
+  z-index: 0;
+}
+
+#contact {
+  z-index: 2;
+}
+
+#interactive {
+  z-index: 4;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.title hr {
+  background-color: #393c46;
+  height: 10px;
+  width: 8rem;
+}
+
+.dim {
+  filter: brightness(50%);
+}
+
+.hidden {
+  filter: opacity(0);
+}
+
+@keyframes fade-in {
+  from {
+    filter: opacity(0);
+    transform: scale(0.8);
+  }
+  to {
+    filter: opacity(1);
+    transform: scale(1);
+  }
+}
+
+.fade-in-element {
+  animation: fade-in forwards 1s ease;
+}
+
+.left {
+  position: relative;
+  left: -75vw !important;
+}
+
+@keyframes slide-in-left {
+  from {
+    position: relative;
+    left: -75vw;
+  }
+  to {
+    position: relative;
+    left: 0;
+  }
+}
+
+.slide-left {
+  animation: slide-in-left forwards 1s ease;
+}
+
+.right {
+  position: relative;
+  left: 75vw !important;
+}
+
+@keyframes slide-in-right {
+  from {
+    position: relative;
+    left: 75vw;
+  }
+  to {
+    position: relative;
+    left: 0;
+  }
+}
+
+.slide-right {
+  animation: slide-in-right forwards 1s ease;
+}
+
+/* .bubbles-left-back {
+  position: absolute;
+  width: 300px;
+  left: -820px;
+  top: 0;
+  margin: 0;
+  filter: opacity(0.8);
+}
+
+.bubbles-left-fore {
+  position: absolute;
+  width: 300px;
+  left: 100px;
+  top: -8rem;
+  margin: 0;
+  filter: opacity(0.8);
+}
+
+.bubbles-right-fore {
+  position: absolute;
+  left: 78%;
+  top: 0rem;
+  margin: 0;
+  filter: opacity(0.8);
+} */
+
+@media screen and (max-width: 1710px) {
+  #projects {
+    height: 70rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .parallax__group {
+    height: auto;
+  }
+  #about {
+    height: 92rem;
+  }
+  /* .bubbles-left-back {
+    left: -500px;
+  }
+  .bubbles-left-fore {
+    left: -50px;
+  }
+  .bubbles-right-fore {
+    left: 77%;
+  } */
+  .shapes {
+    z-index: 5;
+    top: 40vh;
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #projects {
+    height: 92rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .shapes {
+    z-index: 5;
+    top: 60vh;
+    transform: scale(1.4);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .shapes {
+    z-index: 5;
+    top: 80vh;
+    transform: scale(1.6);
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .bubbles-left-back,
+  .bubbles-left-fore,
+  .bubbles-right-fore {
+    display: none;
+  }
+} */
