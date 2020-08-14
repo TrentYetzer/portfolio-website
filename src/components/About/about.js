@@ -72,7 +72,7 @@ const About = () => (
               <a href="#contact">Contact me</a>
             </p>
             <a
-              href="https://drive.google.com/file/d/1Tv7fYK2ik7YNa9oFyk3o5VXmFiXJbv9e/view"
+              href="https://drive.google.com/file/d/1Tv7fYK2ik7YNa9oFyk3o5VXmFiXJbv9e/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >

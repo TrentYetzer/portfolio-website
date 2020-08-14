@@ -36,9 +36,13 @@
   filter: opacity(0.5);
 }
 
-.view-button {
+.button-box {
   position: absolute;
   bottom: 1rem;
+}
+
+.view-button {
+  margin-right: 1rem;
   height: 2rem;
   width: 8rem;
   border: 2px solid #6320ee;

@@ -33,7 +33,7 @@ const Modals = () => (
         >
           <button className="view-button">
             <text>View Code</text>
-            <i className="fas fa-external-link-alt"></i>
+            <i className="fab fa-github"></i>
           </button>
         </a>
       </div>
@@ -61,7 +61,7 @@ const Modals = () => (
         >
           <button className="view-button">
             <text>View Code</text>
-            <i className="fas fa-external-link-alt"></i>
+            <i className="fab fa-github"></i>
           </button>
         </a>
       </div>
@@ -76,21 +76,33 @@ const Modals = () => (
         <h6>Peronsal Code Project</h6>
         <hr />
         <p>
-          Small front end project to help practice writing and understanding how
+          Single Page Application to help practice writing and understanding how
           sorting algorithms parse through arrays of data. More sorting
           algorithms are being added, and as of late July 2020 there are a total
           of 10 algorithms and include merge, selection, tim, quick, and more.
         </p>
-        <a
-          href="https://github.com/TrentYetzer/algorithm-visualizer"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="view-button">
-            <text>View Code</text>
-            <i className="fas fa-external-link-alt"></i>
-          </button>
-        </a>
+        <div className="button-box">
+          <a
+            href="https://trentyetzer.github.io/algorithm-visualizer/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="view-button">
+              <text>View Site</text>
+              <i className="fas fa-external-link-alt"></i>
+            </button>
+          </a>
+          <a
+            href="https://github.com/TrentYetzer/algorithm-visualizer"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="view-button">
+              <text>View Code</text>
+              <i className="fab fa-github"></i>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
     <div id="magic-mirror-modal" className="modal">
@@ -118,7 +130,7 @@ const Modals = () => (
         >
           <button className="view-button">
             <text>View Code</text>
-            <i className="fas fa-external-link-alt"></i>
+            <i className="fab fa-github"></i>
           </button>
         </a>
       </div>
@@ -149,7 +161,7 @@ const Modals = () => (
         >
           <button className="view-button">
             <text>View Code</text>
-            <i className="fas fa-external-link-alt"></i>
+            <i className="fab fa-github"></i>
           </button>
         </a>
       </div>
