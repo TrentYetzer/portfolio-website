@@ -65,11 +65,10 @@ const About = () => (
               Dakota State University actively searching for an internship or
               co-op opportunity for the summer of 2021. I have a strong desire
               to use new technologies to create applications or tools that look
-              amazing and have the ability to make a difference in someones
-              life.
+              amazing and provide a great user experience.
             </p>
             <p>
-              <a href="#contact">Contact me</a>
+              <a href="#footer">Contact me</a>
             </p>
             <a
               href="https://drive.google.com/file/d/1Tv7fYK2ik7YNa9oFyk3o5VXmFiXJbv9e/view?usp=sharing"
@@ -89,5 +88,3 @@ const About = () => (
 )
 
 export default About
-
-//https://css-tricks.com/css-only-carousel/

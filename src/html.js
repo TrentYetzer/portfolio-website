@@ -63,12 +63,14 @@ export default function HTML(props) {
                 setMultiplier = 0
               } else if (modal.id === "equity-pursuit-modal") {
                 setMultiplier = 1
+              } else if (modal.id === "magic-mirror-2-modal") {
+                setMultiplier = 5
               } else if (modal.id === "algorithm-visualizer-modal") {
                 setMultiplier = 2
               } else if (modal.id === "magic-mirror-modal") {
                 setMultiplier = 3
               } else if (modal.id === "mechmania-modal") {
-                setMultiplier = 4
+                setMultiplier = 4;
               }
             }
             function close(modal, background) {
@@ -80,6 +82,7 @@ export default function HTML(props) {
             var projects = [
               "opentrack",
               "equity-pursuit",
+              "magic-mirror-2",
               "algorithm-visualizer",
               "magic-mirror",
               "mechmania",
@@ -110,7 +113,8 @@ export default function HTML(props) {
                 event.target !== openButtons[1] &&
                 event.target !== openButtons[2] &&
                 event.target !== openButtons[3] &&
-                event.target !== openButtons[4]
+                event.target !== openButtons[4] &&
+                event.target !== openButtons[5]
               ) {
                 buttonHit = false
               }
@@ -121,7 +125,8 @@ export default function HTML(props) {
                 !modals[1].contains(event.target) &&
                 !modals[2].contains(event.target) &&
                 !modals[3].contains(event.target) &&
-                !modals[4].contains(event.target)
+                !modals[4].contains(event.target) &&
+                !modals[5].contains(event.target)
               ) {
                 modalClicked = false
               }

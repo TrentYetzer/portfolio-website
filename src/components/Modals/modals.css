@@ -6,7 +6,7 @@
   transition: all 0.6s ease-in-out;
   background-color: white;
   color: #393c46;
-  top: -60vh;
+  top: -100vh;
   /* top: 50%;  */
   left: 50%;
   transform: translate(-50%, -50%);

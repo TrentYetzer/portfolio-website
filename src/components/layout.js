@@ -26,10 +26,10 @@ const Layout = ({ children }) => {
           </div>
         </div>
         <div id="interactive" className="home-button">
-          <a href="#about">
+          <a href="#projects">
             <button className="cool-button">
               <span></span>
-              <text>View my work</text>
+              <text>View My Work</text>
             </button>
           </a>
         </div>

@@ -76,6 +76,37 @@ const Projects = () => (
         </div>
         <div className="flex card">
           <div className="flex column card-contents">
+            <div className="card-title">Magic Mirror 2</div>
+            <div className="card-subtitle">
+              <img
+                src="https://img.icons8.com/ultraviolet/32/000000/react.png"
+                alt="react"
+              />
+              <img 
+                src="https://img.icons8.com/windows/32/000000/node-js.png"
+                alt="nodejs"
+              />
+              <img 
+                src="https://img.icons8.com/color/32/000000/mongodb.png"
+                alt="mongodb"
+              />
+            </div>
+            <div className="card-action">
+              <button className="project-button">
+                <span id="magic-mirror-2-button"></span>
+                <text>Learn More</text>
+              </button>
+            </div>
+          </div>
+          <img
+            className="thumbnail"
+            src="https://i.ibb.co/XSzbJXF/Magic-Mirror-2.png"
+            alt="magic-mirror2"
+            border="0"
+          />
+        </div>
+        <div className="flex card">
+          <div className="flex column card-contents">
             <div className="card-title">Algorithm Visualizer</div>
             <div className="card-subtitle">
               <img

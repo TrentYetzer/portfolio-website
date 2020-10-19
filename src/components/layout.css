@@ -304,7 +304,7 @@ h5 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.5;
+  font-size: 1.5rem;
   line-height: 1.1;
 }
 h6 {
@@ -798,6 +798,15 @@ pre tt:after {
   filter: opacity(0);
 }
 
+.fade-in-element {
+  animation: fade-in forwards 1s ease;
+}
+
+.left {
+  position: relative;
+  left: -100vw !important;
+}
+
 @keyframes fade-in {
   from {
     filter: opacity(0);
@@ -809,19 +818,10 @@ pre tt:after {
   }
 }
 
-.fade-in-element {
-  animation: fade-in forwards 1s ease;
-}
-
-.left {
-  position: relative;
-  left: -75vw !important;
-}
-
 @keyframes slide-in-left {
   from {
     position: relative;
-    left: -75vw;
+    left: -100vw;
   }
   to {
     position: relative;
@@ -835,13 +835,13 @@ pre tt:after {
 
 .right {
   position: relative;
-  left: 75vw !important;
+  left: 100vw !important;
 }
 
 @keyframes slide-in-right {
   from {
     position: relative;
-    left: 75vw;
+    left: 100vw;
   }
   to {
     position: relative;
@@ -852,32 +852,6 @@ pre tt:after {
 .slide-right {
   animation: slide-in-right forwards 1s ease;
 }
-
-/* .bubbles-left-back {
-  position: absolute;
-  width: 300px;
-  left: -820px;
-  top: 0;
-  margin: 0;
-  filter: opacity(0.8);
-}
-
-.bubbles-left-fore {
-  position: absolute;
-  width: 300px;
-  left: 100px;
-  top: -8rem;
-  margin: 0;
-  filter: opacity(0.8);
-}
-
-.bubbles-right-fore {
-  position: absolute;
-  left: 78%;
-  top: 0rem;
-  margin: 0;
-  filter: opacity(0.8);
-} */
 
 @media screen and (max-width: 1710px) {
   #projects {
@@ -892,15 +866,6 @@ pre tt:after {
   #about {
     height: 92rem;
   }
-  /* .bubbles-left-back {
-    left: -500px;
-  }
-  .bubbles-left-fore {
-    left: -50px;
-  }
-  .bubbles-right-fore {
-    left: 77%;
-  } */
   .shapes {
     z-index: 5;
     top: 40vh;
@@ -929,11 +894,3 @@ pre tt:after {
     transform: scale(1.6);
   }
 }
-
-/* @media screen and (max-width: 600px) {
-  .bubbles-left-back,
-  .bubbles-left-fore,
-  .bubbles-right-fore {
-    display: none;
-  }
-} */

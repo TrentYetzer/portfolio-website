@@ -17,7 +17,7 @@ const Modals = () => (
       <OpenTrackCarousel />
       <div className="modal-text">
         <h4>OpenTrack</h4>
-        <h6>Full Stack Website</h6>
+        <h6>Educational Material Library</h6>
         <hr />
         <p>
           Launched in 2020, OpenTrack is a platform dedicated to the promotion
@@ -26,16 +26,28 @@ const Modals = () => (
           to pursue their education or curiosity through effiecent and effective
           tracks.
         </p>
-        <a
-          href="https://github.com/TrentYetzer/opentrack.tech"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="view-button">
-            <text>View Code</text>
-            <i className="fab fa-github"></i>
-          </button>
-        </a>
+        <div className="button-box">
+          <a
+            href="https://opentrack-tech.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="view-button">
+              <text>View Site</text>
+              <i className="fas fa-external-link-alt"></i>
+            </button>
+          </a>
+          <a
+            href="https://github.com/TrentYetzer/opentrack.tech"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="view-button">
+              <text>View Code</text>
+              <i className="fab fa-github"></i>
+            </button>
+          </a>
+        </div>
       </div>
     </div>
     <div id="equity-pursuit-modal" className="modal">
@@ -45,7 +57,7 @@ const Modals = () => (
       <EquityCarousel />
       <div className="modal-text">
         <h4>Equity Pursuit</h4>
-        <h6>Full Stack Website</h6>
+        <h6>Equity Guessing Game</h6>
         <hr />
         <p>
           Based on GeoGuessr, Equity-pursuit is a game where a player is given
@@ -66,6 +78,28 @@ const Modals = () => (
         </a>
       </div>
     </div>
+    <div id="magic-mirror-2-modal" className="modal">
+      <div id="magic-mirror-2-close" className="close-button">
+        <text>&times;</text>
+      </div>
+      <img
+        src="https://i.ibb.co/XSzbJXF/Magic-Mirror-2.png"
+        alt="magic-mirror1"
+        border="0"
+      />
+      <div className="modal-text">
+        <h4>Magic-Mirror 2</h4>
+        <h6>Improved Magic Mirror Project</h6>
+        <hr />
+        <p>
+          My last Magic Mirror project was purely front end and lacked some 
+          modules and functionality I wanted to add. Instead of building off the 
+          old one, I am creating a full stack magic mirror web page so that I can 
+          interact with it from any device. Depending on how much school work I get,
+          the project should be finished sometime before the new year.
+        </p>
+      </div>
+    </div>
     <div id="algorithm-visualizer-modal" className="modal">
       <div id="algorithm-visualizer-close" className="close-button">
         <text>&times;</text>
@@ -73,7 +107,7 @@ const Modals = () => (
       <AlgorithmCarousel />
       <div className="modal-text">
         <h4>Algorithm Visualizer</h4>
-        <h6>Peronsal Code Project</h6>
+        <h6>Personal Code Project</h6>
         <hr />
         <p>
           Single Page Application to help practice writing and understanding how
@@ -116,7 +150,7 @@ const Modals = () => (
       />
       <div className="modal-text">
         <h4>Magic-Mirror</h4>
-        <h6>Peronsal Code Project</h6>
+        <h6>Web Page For A Magic Mirror</h6>
         <hr />
         <p>
           Front end project with a few different modules to display information
